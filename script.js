@@ -9,20 +9,21 @@ function firstNonRepeatedChar(str) {
     }
     const arr = [];
     let isFind = false;
+	let word = ""
     
     for (let key in obj) {
       if(obj[key] == 1){
-        arr.push(key);
+        word =  key ;
         isFind = true;
       }
     }
     if(isFind){
-      return arr;
+      return word;
     }else{
       return null;
     }
     
 	
 }
-const input = prompt("Enter a string");
-alert(firstNonRepeatedChar(input)); 
+//const input = prompt("Enter a string");
+//alert(firstNonRepeatedChar(input)); 
